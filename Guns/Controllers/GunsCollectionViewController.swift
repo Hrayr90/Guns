@@ -17,13 +17,20 @@ class GunsCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
+
+       sniperGuns.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: sniperGuns, for: indexPath)
-    
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: "sniperGunsCell",
+            for: indexPath) as? SniperGunsCell
+        else { fatalError() }
+
+        cell.model.text = "Model: " + sniperGuns[indexPath.item].modelname
+        cell.calibre.text = "Calibre: " + sniperGuns[indexPath.item].calibre
+        cell.image.image = sniperGuns[indexPath.item].image
+
         return cell
     }
 }
