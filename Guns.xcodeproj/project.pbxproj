@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		F84BD6AA298C0C5900C0F597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84BD6A9298C0C5900C0F597 /* AppDelegate.swift */; };
 		F84BD6AC298C0C5900C0F597 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84BD6AB298C0C5900C0F597 /* SceneDelegate.swift */; };
-		F84BD6AE298C0C5900C0F597 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84BD6AD298C0C5900C0F597 /* ViewController.swift */; };
 		F84BD6B1298C0C5900C0F597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F84BD6AF298C0C5900C0F597 /* Main.storyboard */; };
 		F84BD6B3298C0C5B00C0F597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F84BD6B2298C0C5B00C0F597 /* Assets.xcassets */; };
 		F84BD6B6298C0C5B00C0F597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F84BD6B4298C0C5B00C0F597 /* LaunchScreen.storyboard */; };
+		F84BD6C1298C0E8400C0F597 /* GunsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84BD6C0298C0E8400C0F597 /* GunsCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F84BD6A6298C0C5900C0F597 /* Guns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F84BD6A9298C0C5900C0F597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F84BD6AB298C0C5900C0F597 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F84BD6AD298C0C5900C0F597 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F84BD6B0298C0C5900C0F597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F84BD6B2298C0C5B00C0F597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F84BD6B5298C0C5B00C0F597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F84BD6B7298C0C5B00C0F597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F84BD6C0298C0E8400C0F597 /* GunsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GunsCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,39 @@
 		F84BD6A8298C0C5900C0F597 /* Guns */ = {
 			isa = PBXGroup;
 			children = (
+				F84BD6BD298C0E0900C0F597 /* Models */,
+				F84BD6BE298C0E1300C0F597 /* Views */,
+				F84BD6BF298C0E2400C0F597 /* Controllers */,
 				F84BD6A9298C0C5900C0F597 /* AppDelegate.swift */,
 				F84BD6AB298C0C5900C0F597 /* SceneDelegate.swift */,
-				F84BD6AD298C0C5900C0F597 /* ViewController.swift */,
-				F84BD6AF298C0C5900C0F597 /* Main.storyboard */,
-				F84BD6B2298C0C5B00C0F597 /* Assets.xcassets */,
-				F84BD6B4298C0C5B00C0F597 /* LaunchScreen.storyboard */,
 				F84BD6B7298C0C5B00C0F597 /* Info.plist */,
 			);
 			path = Guns;
+			sourceTree = "<group>";
+		};
+		F84BD6BD298C0E0900C0F597 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F84BD6BE298C0E1300C0F597 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F84BD6AF298C0C5900C0F597 /* Main.storyboard */,
+				F84BD6B2298C0C5B00C0F597 /* Assets.xcassets */,
+				F84BD6B4298C0C5B00C0F597 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F84BD6BF298C0E2400C0F597 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F84BD6C0298C0E8400C0F597 /* GunsCollectionViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F84BD6AE298C0C5900C0F597 /* ViewController.swift in Sources */,
 				F84BD6AA298C0C5900C0F597 /* AppDelegate.swift in Sources */,
 				F84BD6AC298C0C5900C0F597 /* SceneDelegate.swift in Sources */,
+				F84BD6C1298C0E8400C0F597 /* GunsCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
