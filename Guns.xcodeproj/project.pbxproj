@@ -13,6 +13,8 @@
 		F84BD6B3298C0C5B00C0F597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F84BD6B2298C0C5B00C0F597 /* Assets.xcassets */; };
 		F84BD6B6298C0C5B00C0F597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F84BD6B4298C0C5B00C0F597 /* LaunchScreen.storyboard */; };
 		F84BD6C1298C0E8400C0F597 /* GunsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84BD6C0298C0E8400C0F597 /* GunsCollectionViewController.swift */; };
+		F84BD6C4298C132A00C0F597 /* SniperGunsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84BD6C3298C132A00C0F597 /* SniperGunsCell.swift */; };
+		F84BD6C6298C17FE00C0F597 /* SniperGuns.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84BD6C5298C17FE00C0F597 /* SniperGuns.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F84BD6B5298C0C5B00C0F597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F84BD6B7298C0C5B00C0F597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F84BD6C0298C0E8400C0F597 /* GunsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GunsCollectionViewController.swift; sourceTree = "<group>"; };
+		F84BD6C3298C132A00C0F597 /* SniperGunsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniperGunsCell.swift; sourceTree = "<group>"; };
+		F84BD6C5298C17FE00C0F597 /* SniperGuns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniperGuns.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 				F84BD6BD298C0E0900C0F597 /* Models */,
 				F84BD6BE298C0E1300C0F597 /* Views */,
 				F84BD6BF298C0E2400C0F597 /* Controllers */,
+				F84BD6C2298C12E700C0F597 /* Cells */,
 				F84BD6A9298C0C5900C0F597 /* AppDelegate.swift */,
 				F84BD6AB298C0C5900C0F597 /* SceneDelegate.swift */,
 				F84BD6B7298C0C5B00C0F597 /* Info.plist */,
@@ -69,6 +74,7 @@
 		F84BD6BD298C0E0900C0F597 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F84BD6C5298C17FE00C0F597 /* SniperGuns.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -89,6 +95,14 @@
 				F84BD6C0298C0E8400C0F597 /* GunsCollectionViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F84BD6C2298C12E700C0F597 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F84BD6C3298C132A00C0F597 /* SniperGunsCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84BD6C6298C17FE00C0F597 /* SniperGuns.swift in Sources */,
 				F84BD6AA298C0C5900C0F597 /* AppDelegate.swift in Sources */,
+				F84BD6C4298C132A00C0F597 /* SniperGunsCell.swift in Sources */,
 				F84BD6AC298C0C5900C0F597 /* SceneDelegate.swift in Sources */,
 				F84BD6C1298C0E8400C0F597 /* GunsCollectionViewController.swift in Sources */,
 			);
